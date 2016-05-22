@@ -349,7 +349,7 @@ function Crystal.Update()
     local msg = Instance.new("Hint", Workspace)
     msg.Text = "Updating Crystal..."
     wait(.6)
-    local update = game:service'HttpService':GetAsync('https://preview.c9users.io/phpserver/crystal-8/cmds.lua')
+    local update = game:service'HttpService':GetAsync('https://raw.githubusercontent.com/aren-cllc/crystal/master/cmds.lua')
     msg.Text = "Got an update, installing..."
     Crystal.Commands = {};
     print(update)
