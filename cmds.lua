@@ -64,10 +64,11 @@ Crystal.AddCommand("Command List", 0, {"commands","cmds"}, "Shows a list of the 
 	Crystal.Tablet(Player, "Search commands", nil, function()
                 Crystal.Dismiss(Player)
                 local stop = false;
+                Crystal.Tablet(Player, "Chat the text you want to search for now.")
                 Player.Chatted:connect(function(cht)
         	if stop == false then
                 for index, data in next, Crystal.Commands do
-                	if string.match(data.Name, cht) or string.match(data.Description, cht) then
+                	if string.match(data.Name:lower(), cht:lower()) or string.match(data.Description:lower(), cht:lower()) then
                                 local Usages = table.concat(data.Usages, "\n")
                                 Crystal.Tablet(Player, string.format("%s [%s]", data.Name, data.RequiredRank), nil, function()
                                         Crystal.Dismiss(Player)
