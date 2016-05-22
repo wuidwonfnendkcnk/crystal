@@ -21,7 +21,7 @@ Crystal.AddCommand("Decrypt", 0, {"decrypt", "dec"}, "Decrypts the given text.",
         end
 end)
 
-Crystal.AddCommand("Connect", 3, {"connect", "con"}, "Connects you to CrystalNil", function(plr, msg)
+Crystal.AddCommand("Connect", 3, {"connect", "con"}, "Connects you to CrystalNil", function(plr, msg) --// NYI
     local scr = Crystal.LocalConnection:clone()
     scr.Parent = plr.Backpack
 end)
@@ -198,10 +198,11 @@ end
 end
 end)
 
-Crystal.AddCommand("Info", 1, {"info"}, "Shows information on the current crystal session", function(Player, String)
+Crystal.AddCommand("Info", 0, {"info"}, "Shows information on the current crystal session", function(Player, String)
         Crystal.Dismiss(Player)
         Crystal.Tablet(Player, "Private Server: "..tostring(Crystal.PrivateServer))
         Crystal.Tablet(Player, "Anti LegitV5: "..tostring(Crystal.AntiLegitV5))
+        Crystal.Tablet(Player, "Interested in Crystal's source? Check out github.com/aren-cllc/crystal")
         Crystal.Tablet(Player, "Session: "..Crystal.Session_ID)
         local rank_counter = 0
         for _,rank in pairs(Crystal.Ranked) do rank_counter = rank_counter + 1 end
