@@ -190,8 +190,8 @@ end)
 
 Crystal.AddCommand("Laser", 1, {"laser", "laz"}, "Gives the player a laser", function(Player, String)
     if not Crystal.LaserScript then
-    -- Crystal_Laser
-    Crystal.LaserScript = require(202533441)
+    -- Crystal_Laser 403470529
+    Crystal.LaserScript = require(403470529)
     end
     for _,plrs in pairs(game.Players:GetPlayers()) do
         if string.match(plrs.Name:lower(), String:lower()) then
