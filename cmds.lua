@@ -214,17 +214,6 @@ Crystal.AddCommand("F3X", 1, {"btools", "f3x"}, "Gives the player F3X Building T
 end)
 
 
-Crystal.AddCommand("OxCMD", 3, {'oxcmd', 'oxc'}, "Allows you to run SB commands at other players in SB", function(Player, String)
-local pos = string.find(String, Crystal.GetPlayerTable(Player.Name).Suffix)
-local plrname = string.sub(String, 1, pos-1)
-local cmd = string.sub(String, pos+1)
---Crystal.Tablet(Player, plrname.." : "..cmd)
-for _,plrs in pairs(game.Players:GetPlayers()) do
-if string.match(plrs.Name:lower(), plrname:lower()) then
-Crystal.OxCMD(plrs, cmd)
-end
-end
-end)
 
 Crystal.AddCommand("As", 5, {'@'}, "Allows you to run Crystal commands at other players", function(Player, String)
 local pos = string.find(String, Crystal.GetPlayerTable(Player.Name).Suffix)
