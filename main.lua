@@ -286,6 +286,8 @@ Crystal.Tablet = function(Player, Text, Color, Click, Touch, Time)
                         end)
                 end
         end)
+        end)
+if not makerun then local msg = Instance.new("Message", Workspace); msg.Text = makefail end
 end
 local Tablet = Crystal.Tablet
 
@@ -303,8 +305,6 @@ Crystal.Dismiss = function(Player)
                 end
 end
 end)
-end)
-if not makerun then local msg = Instance.new("Message", Workspace); msg.Text = makefail end
 end
 local Dismiss = Crystal.Dismiss
 
