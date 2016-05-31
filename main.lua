@@ -387,7 +387,7 @@ Crystal.Update()
 
 Crystal.Connect = function(Player)
         if not Crystal.GetPlayerTable(Player) then
-                Crystal.SetRank(Player, 0, "White", true, true, false, "/", 1.8, 1.8, 1.8, true, "No")
+                Crystal.SetRank(Player, 0, "White", true, true, false, "/", 1.8, 1.8, 1.8, "No", true)
         end
         if Crystal.PrivateServer == true then
             if Crystal.GetPlayerTable(Player).Rank < 1 then 
