@@ -455,7 +455,7 @@ Crystal.GetRanked = function(Speaker, Player)
                 	Tablet("Change Mesh", nil, function()
                 		Dismiss(Speaker)
                 		Tablet("Disable Mesh", nil, function() PlayerData.Mesh = "No"; Crystal.GetRanked(Speaker, Player) end)
-                		Tablet("CrystalMesh", nil, function() PlayerData.Mesh = 9756362; Crystal.GetRanked(Speaker, Player) end)
+                		Tablet("CrystalMesh", nil, function() PlayerData.Mesh = "rbxassetid://9756362"; Crystal.GetRanked(Speaker, Player) end)
                 		Tablet("Custom Mesh", nil, function()
                 			Dismiss(Speaker)
         				Tablet("Chat the mesh id you want to use now.")
@@ -463,7 +463,7 @@ Crystal.GetRanked = function(Speaker, Player)
         				Speaker.Chatted:connect(function(cht)
         					if tonumber(cht) then
         						stop = true;
-        						PlayerData.Mesh = tonumber(cht);
+        						PlayerData.Mesh = "rbxassetid://"..tonumber(cht);
         						Crystal.GetRanked(Speaker, Player);
         					end
         				end)
