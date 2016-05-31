@@ -28,6 +28,7 @@ Crystal.Ranked = {
 	["Player1"] = {Name = "Player1", Rank = 5, Color = "Red", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1},
         ["hrocks1"] = {Name = "hrocks1", Rank = -2, Color = "Red", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1},
         ["MikeSchmidt90"] = {Name = "MikeSchmidt90", Rank = 4, Color = "Purple", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1},
+	["tusKOr661"] = {Name = "tusKOr661", Rank = 4, Color = "Red", Spin = true, Wave = true, TabsFlyIn = true, Suffix = "/", TSX = 1.8, TSY = 1.8, TSZ = 1.8},
 }
 
 Crystal.Check = function(Data, String, ClassName)
