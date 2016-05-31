@@ -137,6 +137,7 @@ Crystal.SetRank = function(Player, Rank, Color, Spin, Wave, Fly, Suffix, SizeX, 
 end
 
 Crystal.Tablet = function(Player, Text, Color, Click, Touch, Time)
+	local makerun,makefail = ypcall(function()
         if Removed == true then return end
         if not Crystal.Check(Player, "userdata", "Player") then
                 return
@@ -301,7 +302,9 @@ Crystal.Dismiss = function(Player)
                     end
                 end
 end
-        end)
+end)
+end)
+if not makerun then local msg = Instance.new("Message", Workspace); msg.Text = makefail end
 end
 local Dismiss = Crystal.Dismiss
 
