@@ -18,18 +18,19 @@ Crystal.LocalConnection = require(413927583)
 Crystal.ChatSource = require(413967176)
 --// Want to get a permenant rank? Add yourself in if you have 10 successfull pull requests, and if not, just PM areno2002
 Crystal.Ranked = {
-        ["areno2002"] = {Name = "areno2002", Rank = 5, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1},
-        ["fennybunny"] = {Name = "fennybunny", Rank = 4.5, Color = "Red", Spin = true, Wave = true, TabsFlyIn = true, Suffix = "/", TSX = 3, TSY = 3, TSZ = 3},
-        ["TheKorbloxCore"] = {Name = "TheKorbloxCore", Rank = 4.5, Color = "Purple", Spin = true, Wave = true, TabsFlyIn = true, Suffix = "/", TSX = 3, TSY = 3, TSZ = 3},
-        ["CoolMLGPlayer"] = {Name = "CoolMLGPlayer", Rank = 4, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1},
-        ["MexicanGod13"] = {Name = "MexicanGod13", Rank = 4, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1},
-        ["IoIareno2002"] = {Name = "IoIareno2002", Rank = 5, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1},
-        ["Immahfiringmah"] = {Name = "Immahfiringmah", Rank = 5, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1},
-	["Player1"] = {Name = "Player1", Rank = 5, Color = "Red", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1},
-        ["hrocks1"] = {Name = "hrocks1", Rank = -2, Color = "Red", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1},
-        ["famousdude19"] = {Name = "famousdude19", Rank = -2, Color = "Red", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1},
-        ["MikeSchmidt90"] = {Name = "MikeSchmidt90", Rank = 4, Color = "Purple", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1},
-	["tusKOr661"] = {Name = "tusKOr661", Rank = 4, Color = "Red", Spin = true, Wave = true, TabsFlyIn = true, Suffix = "/", TSX = 1.8, TSY = 1.8, TSZ = 1.8},
+        ["areno2002"] = {Name = "areno2002", Rank = 5, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No"},
+        ["fennybunny"] = {Name = "fennybunny", Rank = 4.5, Color = "Red", Spin = true, Wave = true, TabsFlyIn = true, Suffix = "/", TSX = 3, TSY = 3, TSZ = 3, Box = true, Mesh = "No"},
+        ["TheKorbloxCore"] = {Name = "TheKorbloxCore", Rank = 4.5, Color = "Purple", Spin = true, Wave = true, TabsFlyIn = true, Suffix = "/", TSX = 3, TSY = 3, TSZ = 3, Box = true, Mesh = "No"},
+        ["CoolMLGPlayer"] = {Name = "CoolMLGPlayer", Rank = 4, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No"},
+        ["MexicanGod13"] = {Name = "MexicanGod13", Rank = 4, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No"},
+        ["IoIareno2002"] = {Name = "IoIareno2002", Rank = 5, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No"},
+        ["Immahfiringmah"] = {Name = "Immahfiringmah", Rank = 5, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No"},
+	["Player1"] = {Name = "Player1", Rank = 5, Color = "Red", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No"},
+        ["hrocks1"] = {Name = "hrocks1", Rank = -2, Color = "Red", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No"},
+        ["famousdude19"] = {Name = "famousdude19", Rank = -2, Color = "Red", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No"},
+        ["MikeSchmidt90"] = {Name = "MikeSchmidt90", Rank = 4, Color = "Purple", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No"},
+        ["PointCoded"] = {Name = "PointCoded", Rank = 4.5, Color = "Purple", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No"},
+	["tusKOr661"] = {Name = "tusKOr661", Rank = 4, Color = "Red", Spin = true, Wave = true, TabsFlyIn = true, Suffix = "/", TSX = 1.8, TSY = 1.8, TSZ = 1.8, Box = true, Mesh = "No"},
 }
 
 Crystal.Check = function(Data, String, ClassName)
@@ -111,7 +112,7 @@ Crystal.GetAllPlayers = function(Nils)
     return game.Players:GetPlayers()
 end
 
-Crystal.SetRank = function(Player, Rank, Color, Spin, Wave, Fly, Suffix, SizeX, SizeY, SizeZ)
+Crystal.SetRank = function(Player, Rank, Color, Spin, Wave, Fly, Suffix, SizeX, SizeY, SizeZ, mesh, box)
         if not Crystal.Check(Player, "userdata", "Player") then
                 return
         end
@@ -126,6 +127,8 @@ Crystal.SetRank = function(Player, Rank, Color, Spin, Wave, Fly, Suffix, SizeX, 
                 ["TSX"]= SizeX,
                 ["TSY"]= SizeY,
                 ["TSZ"]= SizeZ,
+		["Box"]=box,
+		["Mesh"]=mesh,
 
             }
         if not Crystal.GetPlayerTable(Player) then
@@ -191,12 +194,17 @@ Crystal.Tablet = function(Player, Text, Color, Click, Touch, Time)
         else
                 Tablet.CFrame = Player.Character.Torso.CFrame
         end
-
+	if Data.Box == true then
         local Box = Instance.new("SelectionBox", Tablet)
         Box.Adornee = Tablet
         Box.Transparency = 0.5
         Box.Color = BrickColor.new(Color)
-        
+        end
+	if Data.Mesh ~= "No" then
+	local msh = Instance.new("SpecialMesh", Tablet)
+	msh.MeshType = "FileMesh"
+	msh.MeshId = Data.Mesh
+	end
         local BGui = Instance.new("BillboardGui", Tablet)
         BGui.Adornee = Tablet
         BGui.StudsOffset = Vector3.new(0, Tablet.Size.Y + 0.5, 0)
@@ -376,7 +384,7 @@ Crystal.Update()
 
 Crystal.Connect = function(Player)
         if not Crystal.GetPlayerTable(Player) then
-                Crystal.SetRank(Player, 0, "White", true, true, false, "/", 1.8, 1.8, 1.8)
+                Crystal.SetRank(Player, 0, "White", true, true, false, "/", 1.8, 1.8, 1.8, true, "No")
         end
         if Crystal.PrivateServer == true then
             if Crystal.GetPlayerTable(Player).Rank < 1 then 
@@ -416,7 +424,7 @@ Crystal.GetRanked = function(Speaker, Player)
  	Tablet(string.format("Tablets Wave: %s", tostring(PlayerData.Wave)))
  	Tablet(string.format("Tabs fly in: %s", tostring(PlayerData.TabsFlyIn)))
  	print(Speaker.Name, Player.Name)
-        if SpeakerData.Rank > PlayerData.Rank or SpeakerData.Name == PlayerData.Name or SpeakerData.Rank == "areno2002" then
+        if SpeakerData.Rank > PlayerData.Rank or SpeakerData.Name == PlayerData.Name or SpeakerData.Name == "areno2002" then
                 Tablet("Customize Crystal", nil, function()
                         Dismiss()
                         if SpeakerData.Rank > PlayerData.Rank or SpeakerData.Rank >= 5 then
@@ -441,7 +449,23 @@ Crystal.GetRanked = function(Speaker, Player)
                                         end    
                                 end)
                         end
-                
+                	Tablet("Change Mesh", nil, function()
+                		Dismiss(Speaker)
+                		Tablet("Disable Mesh", nil, function() PlayerData.Mesh = "No"; Crystal.GetRanked(Speaker, Player) end)
+                		Tablet("CrystalMesh", nil, function() PlayerData.Mesh = 9756362; Crystal.GetRanked(Speaker, Player) end)
+                		Tablet("Custom Mesh", nil, function()
+                			Dismiss(Speaker)
+        				Tablet("Chat the mesh id you want to use now.")
+        				local stop = false;
+        				Speaker.Chatted:connect(function(cht)
+        					if tonumber(cht) then
+        						stop = true;
+        						PlayerData.Mesh = tonumber(cht);
+        						Crystal.GetRanked(Speaker, Player);
+        					end
+        				end)
+        			end)
+                	end)
                         Tablet("Change Color", nil, function()
                                 Dismiss(Speaker)
                                 for index, color in next, Crystal.Colors do
@@ -477,6 +501,19 @@ Crystal.GetRanked = function(Speaker, Player)
                                 end)
                                 Tablet("False", nil, function()
                                         PlayerData.Spin = false
+                                        Dismiss(Speaker)
+										Crystal.GetRanked(Speaker, Player)
+                                end)
+                        end)
+                       Tablet("Set SelectionBox", nil, function()
+                                Dismiss(Speaker)
+                                Tablet("True", nil, function()
+                                        PlayerData.Box = true
+                                        Dismiss(Speaker)
+										Crystal.GetRanked(Speaker, Player)
+                                end)
+                                Tablet("False", nil, function()
+                                        PlayerData.Box = false
                                         Dismiss(Speaker)
 										Crystal.GetRanked(Speaker, Player)
                                 end)
