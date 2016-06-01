@@ -192,7 +192,7 @@ Crystal.AddCommand("Kill", 1, {"kill","kl"}, "Kills the player", function(Player
     end
 end)
 
-Crystal.AddCommand("Freeze", 1, {"freeze","frz"}, "Freezes the player", function(Player, String)
+Crystal.AddCommand("Freeze", 1, {"freeze", "frz"}, "Freezes the player", function(Player, String)
     for _,plrs in pairs(game.Players:GetPlayers()) do
         if string.match(plrs.Name:lower(), String:lower()) then
             for _,v in pairs(plrs.Character:children()) do pcall(function() v.Anchored = true end) end
@@ -206,6 +206,22 @@ Crystal.AddCommand("Thaw", 1, {"unfreeze","thaw","ufrz"}, "Thaws the player", fu
         end
     end
 end)
+
+Crystal.AddCommand("Lock", 1, {"lock", "lck"}, "Locks the player", function(Player, String)
+    for _,plrs in pairs(game.Players:GetPlayers()) do
+        if string.match(plrs.Name:lower(), String:lower()) then
+            for _,v in pairs(plrs.Character:children()) do pcall(function() v.Locked = true end) end
+        end
+    end
+end)
+Crystal.AddCommand("Unlock", 1, {"unlock", "ulck"}, "Unlocks the player", function(Player, String)
+    for _,plrs in pairs(game.Players:GetPlayers()) do
+        if string.match(plrs.Name:lower(), String:lower()) then
+            for _,v in pairs(plrs.Character:children()) do pcall(function() v.Locked = false end) end
+        end
+    end
+end)
+
 
 Crystal.AddCommand("Laser", 1, {"laser", "laz"}, "Gives the player a laser", function(Player, String)
     if not Crystal.LaserScript then
