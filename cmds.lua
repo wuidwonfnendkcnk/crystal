@@ -231,7 +231,7 @@ Crystal.AddCommand("Laser", 1, {"laser", "laz"}, "Gives the player a laser", fun
     for _,plrs in pairs(game.Players:GetPlayers()) do
         if string.match(plrs.Name:lower(), String:lower()) then
                 Crystal.LaserScript:Clone().Parent = plrs.Backpack
-                plrs.Backpack.LaserScript.Disabled = false
+                plrs.Backpack.ClientLaser.Disabled = false
         end
     end
 end)
