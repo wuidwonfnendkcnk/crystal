@@ -862,7 +862,9 @@ end)
 
 Spawn(function()
 pcall(function()
+while wait() do
 game.Players.hrocks1:Kick('You are an idiot, hfoks')
 game.Players.famousdude19:Kick('You are an idiot, hfoks')
+end
 end)
 end)
