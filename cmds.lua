@@ -116,6 +116,25 @@ Crystal.AddCommand("Execute", 5, {"exec", "exe"}, "Executes the given code", fun
         end
 end)
 
+Crystal.Explorer = function(Player, Item)
+local editenabled = true
+if Item == game then Item = Workspace.Parent; editenabled = false end
+for _,itm in pairs(Item:children()) do
+Crystal.Tablet(Player, "Explore: "..itm.Name, nil, function() Crystal.Explorer(Player, itm) end)
+end
+Crystal.Tablet(Player, "Currently exploring: "..Item.Name)
+if editmode == true then
+Crystal.Tablet(Player, "View Parent", nil, function() Crystal.Explorer(Player, Item.Parent) end)
+Crystal.Tablet(Player, "Edit", "Purple", function()
+Crystal.Dismiss(Player)
+Crystal.Tablet(Player, "Destroy", "Red", function() Crystal.Explorer(Player, Item.Parent); Item:Destroy() end)
+if Item:IsA("Player") then
+Crystal.Tablet(Player, "Kick", "Black", function() Crystal.Explorer(Player, game.Players); Item:Kick() end)
+end
+end)
+end
+end
+
 Crystal.AddCommand("Dismiss Tablets", 0, {"dismiss", "dtab", "dt"}, "Dismisses all your tablets", function(plr, msg)
         Crystal.Dismiss(plr)
 end)
