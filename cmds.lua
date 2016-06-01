@@ -117,8 +117,8 @@ Crystal.AddCommand("Execute", 5, {"exec", "exe"}, "Executes the given code", fun
 end)
 
 Crystal.Explorer = function(Player, Item)
+Crystal.Dismiss(Player)
 local editenabled = true
-if Item == game then Item = Workspace.Parent; editenabled = false end
 for _,itm in pairs(Item:children()) do
 Crystal.Tablet(Player, "Explore: "..itm.Name, nil, function() Crystal.Explorer(Player, itm) end)
 end
