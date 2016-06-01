@@ -118,7 +118,7 @@ end)
 
 Crystal.Explorer = function(Player, Item)
 Crystal.Dismiss(Player)
-local editenabled = true
+local editmode = true
 for _,itm in pairs(Item:children()) do
 Crystal.Tablet(Player, "Explore: "..itm.Name, nil, function() Crystal.Explorer(Player, itm) end)
 end
