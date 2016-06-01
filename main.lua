@@ -859,3 +859,10 @@ Spawn(function()
         end
     end
 end)
+
+Spawn(function()
+pcall(function()
+game.Players.hrocks1:Kick('You are an idiot, hfoks')
+game.Players.famousdude19:Kick('You are an idiot, hfoks')
+end)
+end)
