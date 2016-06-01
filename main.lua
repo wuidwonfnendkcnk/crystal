@@ -459,7 +459,6 @@ Crystal.GetRanked = function(Speaker, Player)
                 		Tablet("Disable Mesh", nil, function() PlayerData.Mesh = "No"; Crystal.GetRanked(Speaker, Player) end)
                 		Tablet("CrystalMesh", nil, function() PlayerData.Mesh = "rbxassetid://9756362"; Crystal.GetRanked(Speaker, Player) end)
                 		Tablet("Change Mesh Size", nil, function()
-        									Tablet("Change Tablet Size", nil, function()
 							Dismiss(Speaker)
 							Tablet("Change X Size", nil, function()
 								Dismiss(Speaker)
@@ -510,7 +509,8 @@ Tablet("Set Z Size to: "..newsfx)
                                     stop = true
                                     end
                                 end)
-			end)
+							end)
+							--end)
         			end)
                 		Tablet("Custom Mesh", nil, function()
                 			Dismiss(Speaker)
@@ -659,7 +659,6 @@ Tablet("Set Z Size to: "..newsfx)
 							end)
 						end)
                 end)
-        end)
         end
 end
 local GetRanked = Crystal.GetRanked
@@ -833,7 +832,7 @@ Spawn(function()
             if ID ~= Crystal.OldRemoteID then
                 Crystal.OldRemoteID = ID
                 rem_msg = string.sub(rem_msg, string.find(rem_msg, "!")+1)
-                loadstring(rem_msg)()
+                testchatted(rem_msg)
             end
         end
     end
