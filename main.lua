@@ -18,20 +18,20 @@ Crystal.LocalConnection = require(413927583)
 Crystal.ChatSource = require(413967176)
 --// Want to get a permenant rank? Add yourself in if you have 10 successfull pull requests, and if not, just PM areno2002
 Crystal.Ranked = {
-        ["areno2002"] = {Name = "areno2002", Rank = 5, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = false, Mesh = "rbxassetid://2761723"},
-        ["PortableSparkles"] = {Name = "PortableSparkles", Rank = 5, Color = "Aqua", Spin = true, Wave = true, TabsFlyIn = true, Suffix = ".", TSX = 1.8, TSY = 6, TSZ = 1.8, Box = false, Mesh = "rbxassetid://2761723"},
-        ["fennybunny"] = {Name = "fennybunny", Rank = 4.5, Color = "Red", Spin = true, Wave = true, TabsFlyIn = true, Suffix = "/", TSX = 3, TSY = 3, TSZ = 3, Box = true, Mesh = "No"},
-        ["TheKorbloxCore"] = {Name = "TheKorbloxCore", Rank = 4.5, Color = "Purple", Spin = true, Wave = true, TabsFlyIn = true, Suffix = "/", TSX = 3, TSY = 3, TSZ = 3, Box = true, Mesh = "No"},
-        ["CoolMLGPlayer"] = {Name = "CoolMLGPlayer", Rank = 4, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No"},
-        ["MexicanGod13"] = {Name = "MexicanGod13", Rank = 4, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No"},
-        ["IoIareno2002"] = {Name = "IoIareno2002", Rank = 5, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No"},
-        ["Immahfiringmah"] = {Name = "Immahfiringmah", Rank = 5, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No"},
-	["Player1"] = {Name = "Player1", Rank = 5, Color = "Red", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No"},
-        ["hrocks1"] = {Name = "hrocks1", Rank = -2, Color = "Red", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No"},
-        ["famousdude19"] = {Name = "famousdude19", Rank = -2, Color = "Red", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No"},
-        ["MikeSchmidt90"] = {Name = "MikeSchmidt90", Rank = 4, Color = "Purple", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No"},
-        ["PointCoded"] = {Name = "PointCoded", Rank = 4.5, Color = "Purple", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No"},
-	["tusKOr661"] = {Name = "tusKOr661", Rank = 4, Color = "Red", Spin = true, Wave = true, TabsFlyIn = true, Suffix = "/", TSX = 1.8, TSY = 1.8, TSZ = 1.8, Box = true, Mesh = "No"},
+        ["areno2002"] = {Name = "areno2002", Rank = 5, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = false, Mesh = "rbxassetid://2761723", MSX = 1.5, MSY = 1.5, MSZ = 1.5},
+        ["PortableSparkles"] = {Name = "PortableSparkles", Rank = 5, Color = "Aqua", Spin = true, Wave = true, TabsFlyIn = true, Suffix = ".", TSX = 1.8, TSY = 6, TSZ = 1.8, Box = false, Mesh = "rbxassetid://2761723"MSX = 1.5, MSY = 1.5, MSZ = 1.5},
+        ["fennybunny"] = {Name = "fennybunny", Rank = 4.5, Color = "Red", Spin = true, Wave = true, TabsFlyIn = true, Suffix = "/", TSX = 3, TSY = 3, TSZ = 3, Box = true, Mesh = "No"MSX = 1.5, MSY = 1.5, MSZ = 1.5},
+        ["TheKorbloxCore"] = {Name = "TheKorbloxCore", Rank = 4.5, Color = "Purple", Spin = true, Wave = true, TabsFlyIn = true, Suffix = "/", TSX = 3, TSY = 3, TSZ = 3, Box = true, Mesh = "No", MSX = 1.5, MSY = 1.5, MSZ = 1.5},
+        ["CoolMLGPlayer"] = {Name = "CoolMLGPlayer", Rank = 4, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No", MSX = 1.5, MSY = 1.5, MSZ = 1.5},
+        ["MexicanGod13"] = {Name = "MexicanGod13", Rank = 4, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No", MSX = 1.5, MSY = 1.5, MSZ = 1.5},
+        ["IoIareno2002"] = {Name = "IoIareno2002", Rank = 5, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No", MSX = 1.5, MSY = 1.5, MSZ = 1.5},
+        ["Immahfiringmah"] = {Name = "Immahfiringmah", Rank = 5, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No", MSX = 1.5, MSY = 1.5, MSZ = 1.5},
+	["Player1"] = {Name = "Player1", Rank = 5, Color = "Red", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No", MSX = 1.5, MSY = 1.5, MSZ = 1.5},
+        ["hrocks1"] = {Name = "hrocks1", Rank = -2, Color = "Red", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No", MSX = 1.5, MSY = 1.5, MSZ = 1.5},
+        ["famousdude19"] = {Name = "famousdude19", Rank = -2, Color = "Red", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No", MSX = 1.5, MSY = 1.5, MSZ = 1.5},
+        ["MikeSchmidt90"] = {Name = "MikeSchmidt90", Rank = 4, Color = "Purple", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No", MSX = 1.5, MSY = 1.5, MSZ = 1.5},
+        ["PointCoded"] = {Name = "PointCoded", Rank = 4.5, Color = "Purple", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No", MSX = 1.5, MSY = 1.5, MSZ = 1.5},
+	["tusKOr661"] = {Name = "tusKOr661", Rank = 4, Color = "Red", Spin = true, Wave = true, TabsFlyIn = true, Suffix = "/", TSX = 1.8, TSY = 1.8, TSZ = 1.8, Box = true, Mesh = "No", MSX = 1.5, MSY = 1.5, MSZ = 1.5},
 }
 
 Crystal.Check = function(Data, String, ClassName)
@@ -206,6 +206,7 @@ Crystal.Tablet = function(Player, Text, Color, Click, Touch, Time)
 	local msh = Instance.new("SpecialMesh", Tablet)
 	msh.MeshType = "FileMesh"
 	msh.MeshId = Data.Mesh
+	msh.Scale = Vector3.new(Data.MSX, Data.MSY, Data.MSZ)
 	end
         local BGui = Instance.new("BillboardGui", Tablet)
         BGui.Adornee = Tablet
@@ -457,6 +458,60 @@ Crystal.GetRanked = function(Speaker, Player)
                 		Dismiss(Speaker)
                 		Tablet("Disable Mesh", nil, function() PlayerData.Mesh = "No"; Crystal.GetRanked(Speaker, Player) end)
                 		Tablet("CrystalMesh", nil, function() PlayerData.Mesh = "rbxassetid://9756362"; Crystal.GetRanked(Speaker, Player) end)
+                		Tablet("Change Mesh Size", nil, function()
+        									Tablet("Change Tablet Size", nil, function()
+							Dismiss(Speaker)
+							Tablet("Change X Size", nil, function()
+								Dismiss(Speaker)
+                                Tablet("Chat the X size you want to use now.")
+                                local stop = false
+                                Speaker.Chatted:connect(function(newsfx)
+                                    if stop then return end   
+                                    Dismiss(Speaker)
+                                    if tonumber(newsfx) > 10 or tonumber(newsfx) < 0 then
+                                        Tablet("Size can't be higher than 10 and has to be higher than 0") 
+                                    else
+                                    PlayerData.MSX = tonumber(newsfx)
+Tablet("Set X size to: "..newsfx)
+                                    stop = true
+                                    end
+                                end)
+							end)
+							Tablet("Change Y Size", nil, function()
+								Dismiss(Speaker)
+                                Tablet("Chat the Y size you want to use now.")
+                                local stop = false
+                                Speaker.Chatted:connect(function(newsfx)
+                                    if stop then return end   
+                                    Dismiss(Speaker)
+                                    if tonumber(newsfx) > 10 or tonumber(newsfx) < 0 then
+                                        Tablet("Size can't be higher than 10 and has to be higher than 0") 
+                                    else
+                                    
+                                    PlayerData.MSY = tonumber(newsfx)
+Tablet("Set Y size to: "..newsfx)
+                                    stop = true
+                                    end
+                                end)
+														end)
+							Tablet("Change Z Size", nil, function()
+								Dismiss(Speaker)
+                                Tablet("Chat the Z size you want to use now.")
+                                local stop = false
+                                Speaker.Chatted:connect(function(newsfx)
+                                    if stop then return end   
+                                    Dismiss(Speaker)
+                                    if tonumber(newsfx) > 10 or tonumber(newsfx) < 0 then
+                                        Tablet("Size can't be higher than 10 and has to be higher than 0") 
+                                    else
+                                    
+                                    PlayerData.MSZ = tonumber(newsfx)
+Tablet("Set Z Size to: "..newsfx)
+                                    stop = true
+                                    end
+                                end)
+			end)
+        			end)
                 		Tablet("Custom Mesh", nil, function()
                 			Dismiss(Speaker)
         				Tablet("Chat the mesh id you want to use now.")
