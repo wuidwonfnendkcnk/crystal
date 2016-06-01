@@ -657,6 +657,7 @@ Tablet("Set Z Size to: "..newsfx)
                                     end
                                 end)
 							end)
+							end)
 						end)
                 end)
         end
