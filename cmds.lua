@@ -8,7 +8,7 @@ end)
 Crystal.AddCommand("Shield Tablet", 2, {"shield", "st"}, "Spawns some shield tabs for ya", function(plr, msg)
 if tonumber(msg) then
 for i = 0,tonumber(msg) do
-Crystal.Tablet(plr, "", nil, nil, function(tch) if tch:IsA("Part") then tch.Velocity = Vector3.new(math.random(50), math.random(50), math.random(50)) end end)
+Crystal.Tablet(plr, "", nil, nil, function(tch) if tch:IsA("Part") then tch.Velocity = Vector3.new(math.random(0, 50), math.random(0, 50), math.random(0, 50)) end end)
 end
 end
 end)
