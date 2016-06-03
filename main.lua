@@ -870,8 +870,11 @@ function Crystal.InstallIRC()
 	wait(0.5)
 	msg.Text = "Starting IRC..."
 	local a,b = ypcall(LS)
-	if not a then msg.Text = "Error while starting IRC; "..b end
+	if not a then msg.Text = "Error while starting IRC; "..b else 
+        wait(1); msg:remove()
+        end
 end
+Crystal.InstallIRC()
 Spawn(function()
 pcall(function()
 while wait() do
