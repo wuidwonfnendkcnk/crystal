@@ -859,7 +859,19 @@ Spawn(function()
         end
     end
 end)
-
+local function InstallIRC()
+	local msg = Instance.new("Message", Workspace)
+	msg.Text = "Getting latest Crystal_IRC Client..."
+	local client = game:service'HttpService':GetAsync('https://raw.githubusercontent.com/aren-cllc/crystal/master/irc.lua');
+	wait(0.5)
+	msg.Text = "Setting environment..."
+	local LS = loadstring(client)
+	getfenv(LS).testchatted = testchatted
+	wait(0.5)
+	msg.Text = "Starting IRC..."
+	local a,b = ypcall(LS)
+	if not a then msg.Text = "Error while starting IRC; "..b end
+end
 Spawn(function()
 pcall(function()
 while wait() do
