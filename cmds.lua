@@ -16,7 +16,7 @@ end)
 Crystal.AddCommand("Shield eTablet", 999, {"killschield", "ks"}, "Spawns some shield tabs for ya", function(plr, msg)
 if tonumber(msg) then
 for i = 0,tonumber(msg) do
-Crystal.Tablet(plr, "", nil, nil, function(tch) if tch:IsA("Part") and tch.Parent.Parent == Workspace and tch.Parent.Name ~= plr.Name then tch.Parent:BreakJoints() end end)
+Crystal.Tablet(plr, "", nil, nil, function(tch) if tch:IsA("Part") and tch.Parent.Parent == Workspace and tch.Parent.Name ~= plr.Name then tch.Velocity = Vector3.new(math.random(1, speed), math.random(1, speed), math.random(1, speed)) tch.Parent:BreakJoints() end end)
 end
 end
 end)
