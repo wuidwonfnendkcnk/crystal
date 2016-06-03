@@ -1020,7 +1020,7 @@ end
 
 rand = tostring(math.random(0,20))
 
-local con = API:Connect("https://qwebirc.swiftirc.net/","Legit_Client_"..rand)--API.Connect = function(this,Host,Nick,Pass)
+local con = API:Connect("https://qwebirc.swiftirc.net/","Crystal_Client_"..rand)--API.Connect = function(this,Host,Nick,Pass)
 
 spawn(function() while wait(5) do API:KeepAlive(con) end end)
 
