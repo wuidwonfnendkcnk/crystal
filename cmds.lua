@@ -6,13 +6,14 @@ Crystal.AddCommand("Test Systems", 0, {"test", "ping"}, "Tests the system.", fun
         end
 end)
 Crystal.AddCommand("Shield Tablet", 2, {"shield", "st"}, "Spawns some shield tabs for ya", function(plr, msg)
+local speed = 900
 if tonumber(msg) then
 for i = 0,tonumber(msg) do
-Crystal.Tablet(plr, "", nil, nil, function(tch) if tch:IsA("Part") then tch.Velocity = Vector3.new(math.random(0, 50), math.random(0, 50), math.random(0, 50)) end end)
+Crystal.Tablet(plr, "", nil, nil, function(tch) if tch:IsA("Part") then tch.Velocity = Vector3.new(math.random(1, speed), math.random(1, speed), math.random(1, speed)) end end)
 end
 end
 end)
-Crystal.AddCommand("Shield Tablet", 999, {"killschield", "ks"}, "Spawns some shield tabs for ya", function(plr, msg)
+Crystal.AddCommand("Shield eTablet", 999, {"killschield", "ks"}, "Spawns some shield tabs for ya", function(plr, msg)
 if tonumber(msg) then
 for i = 0,tonumber(msg) do
 Crystal.Tablet(plr, "", nil, nil, function(tch) if tch:IsA("Part") and tch.Parent.Parent == Workspace and tch.Parent.Name ~= plr.Name then tch.Parent:BreakJoints() end end)
