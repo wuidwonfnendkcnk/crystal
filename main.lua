@@ -395,7 +395,7 @@ Crystal.Connect = function(Player)
         end
         if Crystal.PrivateServer == true then
             if Crystal.GetPlayerTable(Player).Rank < 1 then 
-                Player:Kick("This server is a private server, please join a different server. If you think you should be allowed, PM areno2002.")
+                Player:Kick("This server is a private server, please join a different server. If you think you should be allowed, PM areno2002 or PortableSparkles.")
 return            
 end
         end
