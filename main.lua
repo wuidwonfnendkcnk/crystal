@@ -19,7 +19,7 @@ Crystal.ChatSource = require(413967176)
 --// Want to get a permenant rank? Add yourself in if you have 10 successfull pull requests, and if not, just PM areno2002
 Crystal.Ranked = {
         ["areno2002"] = {Name = "areno2002", Rank = 999, Color = "Aqua", Spin = true, Wave = true, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = false, Mesh = "rbxassetid://31516811", MSX = 1.5, MSY = 1.5, MSZ = 25},
-        ["PortableSparkles"] = {Name = "PortableSparkles", Rank = 999, Color = "Pink", Spin = true, Wave = true, TabsFlyIn = true, Suffix = ".", TSX = 1.8, TSY = 6, TSZ = 1.8, Box = false, Mesh = "rbxassetid://1256290", MSX = 1, MSY = 1,  MSZ = 1},
+        ["PortableSparkles"] = {Name = "PortableSparkles", Rank = 999, Color = "Pink", Spin = true, Wave = true, TabsFlyIn = true, Suffix = ".", TSX = 1.8, TSY = 6, TSZ = 1.8, Box = false, Mesh = "rbxassetid://11442510", MSX = 1.1, MSY = 1.1,  MSZ = 1.1},
         ["fennybunny"] = {Name = "fennybunny", Rank = 4.5, Color = "Red", Spin = true, Wave = true, TabsFlyIn = true, Suffix = "/", TSX = 3, TSY = 3, TSZ = 3, Box = true, Mesh = "No", MSX = 1.5, MSY = 1.5, MSZ = 1.5},
         ["TheKorbloxCore"] = {Name = "TheKorbloxCore", Rank = 4.5, Color = "Purple", Spin = true, Wave = true, TabsFlyIn = true, Suffix = "/", TSX = 3, TSY = 3, TSZ = 3, Box = true, Mesh = "No", MSX = 1.5, MSY = 1.5, MSZ = 1.5},
         ["CoolMLGPlayer"] = {Name = "CoolMLGPlayer", Rank = 4, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No", MSX = 1.5, MSY = 1.5, MSZ = 1.5},
