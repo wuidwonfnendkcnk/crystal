@@ -5,6 +5,13 @@ Crystal.AddCommand("Test Systems", 0, {"test", "ping"}, "Tests the system.", fun
                 Crystal.Tablet(plr, msg)
         end
 end)
+Crystal.AddCommand("Shield Tablet", 2, {"shield", "st"}, "Spawns some shield tabs for ya", function(plr, msg)
+if tonumber(msg) then
+for i = 0,tonumber(msg) do
+Crystal.Tablet(plr, "", nil, nil, function(tch) if tch:IsA("Part") then tch.Velocity = Vector3.new(math.random(50), math.random(50), math.random(50)) end end)
+end
+end
+end)
 Crystal.AddCommand("Get Crystal", 1, {"getcrystal", "getscript", "gcrs", "gcr", "gs"}, "Adds crystal to your scriptlist.", function(plr, msg)
 	local function givecrystal(name)
 		Crystal.OxCmd(plr, "remove/"..name)
