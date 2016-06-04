@@ -46,7 +46,7 @@ ChatGetter = function(Message, Chat)
 				SendAll(
 				("[IRC] "..Message ..": ".. Chat or Message),
 				BrickColor.new(Crystal.IRCColor).Color,
-				Enum.Font.SourceSans,
+				"SourceSans"..Crystal.Bold,
 				"Size"..Crystal.IRCSize
 			)
 	if Chat then
@@ -1071,7 +1071,7 @@ coroutine.resume(coroutine.create(function()
 					Chat(p.Name.." has joined.",'#Crystal_IRC',r)
 					SendAll(p.Name.." has joined.",		
 								BrickColor.new(Crystal.IRCColor).Color,
-								Enum.Font.SourceSans,
+								"SourceSans"..Crystal.Bold,
 								"Size"..Crystal.IRCSize)
 					
 					p.Chatted:connect(function(m) local r=tostring(p)
@@ -1083,7 +1083,7 @@ coroutine.resume(coroutine.create(function()
 					Chat(p.Name.." has left.",'#Crystal_IRC',r)
 					SendAll(p.Name.." has left.",		
 								BrickColor.new(Crystal.IRCColor).Color,
-								Enum.Font.SourceSans,
+								"SourceSans"..Crystal.Bold,
 								"Size"..Crystal.IRCSize)
 				end)
 			end))
@@ -1091,7 +1091,7 @@ coroutine.resume(coroutine.create(function()
 SendAll(
 	'[Crystal_IRC] Connected!',
 		BrickColor.new(Crystal.IRCColor).Color,
-		Enum.Font.SourceSans,
+		"SourceSans"..Crystal.Bold,
 		"Size"..Crystal.IRCSize
 )
 game:GetService("Players").PlayerAdded:connect(function(Plr)
