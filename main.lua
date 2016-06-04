@@ -817,7 +817,6 @@ AddRCommand("bold", function(str)
 	else
 		Crystal.Bold = ""
 	end
-end
 end)
 AddRCommand("col", function(str)
 	Crystal.IRCColor = str	
