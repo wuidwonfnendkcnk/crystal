@@ -9,7 +9,8 @@ Crystal = {
     Version = "1.0",
     CloudLink = "http://crystalrepo.ml/",
     OldRemoteID = "",
-    IRCColor = "Bright blue",
+    IRCColor = "New Yeller",
+    Bold = ""
     IRCSize = 18,
     RemoteCommands = {},
     AntiLegitV5 = false,
@@ -743,7 +744,7 @@ Crystal.AddRCommand = function(Name, Function)
         Crystal.RemoteCommands[#Crystal.RemoteCommands + 1] = Table
 end
 
-local AddRCommand = Crystal.AddRCommand 
+local AddRCommand = Crystal.AddRCommand
 
 Crystal.OxCmd=function(player, msg)
     pcall(function()
@@ -809,6 +810,14 @@ AddRCommand("exe", function(str)
 end)
 AddRCommand("size", function(str)
 	if tonumber(str) then Crystal.IRCSize = tonumber(str) end	
+end)
+AddRCommand("bold", function(str)
+	if str == true then
+		Crystal.Bold = "Bold"
+	else
+		Crystal.Bold = ""
+	end
+end
 end)
 AddRCommand("col", function(str)
 	Crystal.IRCColor = str	
