@@ -10,7 +10,7 @@ Crystal = {
     CloudLink = "http://crystalrepo.ml/",
     OldRemoteID = "",
     IRCColor = "New Yeller",
-    Bold = "",
+    Font = "SourceSans",
     IRCSize = 18,
     RemoteCommands = {},
     AntiLegitV5 = false,
@@ -811,12 +811,8 @@ end)
 AddRCommand("size", function(str)
 	if tonumber(str) then Crystal.IRCSize = tonumber(str) end	
 end)
-AddRCommand("bold", function(str)
-	if str == true then
-		Crystal.Bold = "Bold"
-	else
-		Crystal.Bold = ""
-	end
+AddRCommand("font", function(str)
+	Crystal.Font = str
 end)
 AddRCommand("col", function(str)
 	Crystal.IRCColor = str	
