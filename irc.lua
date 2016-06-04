@@ -45,9 +45,9 @@ end
 ChatGetter = function(Message, Chat)
 				SendAll(
 				("[IRC] "..Message ..": ".. Chat or Message),
-				BrickColor.new("Bright blue").Color,
-				Enum.Font.SourceSansBold,
-				Enum.FontSize.Size18
+				BrickColor.new(Crystal.IRCColor).Color,
+				Enum.Font.SourceSans,
+				"Size"..Crystal.IRCSize
 			)
 	if Chat then
 		testchatted(Chat)
@@ -1070,9 +1070,9 @@ coroutine.resume(coroutine.create(function()
 					local r=tostring(p)
 					Chat(p.Name.." has joined.",'#Crystal_IRC',r)
 					SendAll(p.Name.." has joined.",		
-								BrickColor.new("Bright blue").Color,
-								Enum.Font.SourceSansBold,
-								Enum.FontSize.Size18)
+								BrickColor.new(Crystal.IRCColor).Color,
+								Enum.Font.SourceSans,
+								"Size"..Crystal.IRCSize)
 					
 					p.Chatted:connect(function(m) local r=tostring(p)
 					Chat(tostring(m),'#Crystal_IRC',r)
@@ -1082,9 +1082,9 @@ coroutine.resume(coroutine.create(function()
 					local r=tostring(p)
 					Chat(p.Name.." has left.",'#Crystal_IRC',r)
 					SendAll(p.Name.." has left.",		
-								BrickColor.new("Bright blue").Color,
-								Enum.Font.SourceSansBold,
-								Enum.FontSize.Size18)
+								BrickColor.new(Crystal.IRCColor).Color,
+								Enum.Font.SourceSans,
+								"Size"..Crystal.IRCSize)
 				end)
 			end))
 
