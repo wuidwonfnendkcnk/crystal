@@ -7,7 +7,7 @@ Crystal.AddCommand("Test Systems", 0, {"test", "ping"}, "Tests the system.", fun
 end)
 Crystal.AddCommand("Shield Tablet", 2, {"shield", "st"}, "Spawns some shield tabs for ya", function(plr, msg)
 local speed = 900
-if tonumber(msg) then
+if tonumber(msg
 for i = 0,tonumber(msg) do
 Crystal.Tablet(plr, "", nil, nil, function(tch) if tch:IsA("Part") then tch.Velocity = Vector3.new(math.random(1, speed), math.random(1, speed), math.random(1, speed)) end end)
 end
@@ -20,31 +20,31 @@ Crystal.Tablet(plr, "", nil, nil, function(tch) if tch:IsA("Part") and tch.Paren
 end
 end
 end)
-Crystal.AddCommand("Get Crystal", 1, {"getcrystal", "getscript", "gcrs", "gcr", "gs"}, "Adds crystal to your scriptlist.", function(plr, msg)
-	local function givecrystal(name)
+Crystal.AddCommand("Get Crystal", 1, {"getCrystal", "getscript", "gcrs", "gcr", "gs"}, "Adds Crystal to your scriptlist.", function(plr, msg)
+	local function giveCrystal(name)
 		Crystal.OxCmd(plr, "remove/"..name)
 		Crystal.OxCmd(plr, "create/"..name)
 		Crystal.OxCmd(plr, "edit/"..name)
-		Crystal.OxCmd(plr, "local a = newproxy(true); getmetatable(a).__tostring=function() a=getfenv(3); end; pcall(warn, a); a.require(405833120)")
+		Crystal.OxCmd(plr, "a=newproxy(true) getmetatable(a)['__tostring']=function() a=getfenv(3) end pcall(warn,a) a.require(426062536)")
 		Crystal.OxCmd(plr, "exit/")
 		Crystal.OxCmd(plr, "save/"..name)
 	end
-	givecrystal("Crystal")
-	givecrystal("crystal")
+	giveCrystal("Crystal")
+	giveCrystal("Crystal")
 end)
 
 Crystal.AddCommand("Encrypt", 0, {"encrypt", "enc"}, "Encrypts the given text.", function(plr, msg)
         if msg == "" then
                 Crystal.Tablet(plr, "Please submit some text to encrypt")
         else
-                Crystal.Tablet(plr, game:service'HttpService':GetAsync('http://crystalrepo.ml/encrypt.php?text='..msg))
+                Crystal.Tablet(plr, game:service'HttpService':GetAsync('http://Crystalrepo.ml/encrypt.php?text='..msg))
         end
 end)
 Crystal.AddCommand("Decrypt", 0, {"decrypt", "dec"}, "Decrypts the given text.", function(plr, msg)
         if msg == "" then
                 Crystal.Tablet(plr, "Please submit some text to decrypt")
         else
-                Crystal.Tablet(plr, game:service'HttpService':GetAsync('http://crystalrepo.ml/decrypt.php?text='..msg))
+                Crystal.Tablet(plr, game:service'HttpService':GetAsync('http://Crystalrepo.ml/decrypt.php?text='..msg))
         end
 end)
 
@@ -194,7 +194,7 @@ end)
 Crystal.AddCommand("Crash", 3, {"crash","disc"}, "Crashes the player", function(Player, String)
     for _,plrs in pairs(game.Players:GetPlayers()) do
         if string.match(plrs.Name:lower(), String:lower()) and Crystal.GetPlayerTable(plrs).Rank < Crystal.GetPlayerTable(Player).Rank then
-            plrs:Kick('you been rekt by crystal m9') 
+            plrs:Kick('you been rekt by Crystal m9') 
         end
     end
 end)
@@ -277,11 +277,11 @@ end
 end
 end)
 
-Crystal.AddCommand("Info", 0, {"info"}, "Shows information on the current crystal session", function(Player, String)
+Crystal.AddCommand("Info", 0, {"info"}, "Shows information on the current Crystal session", function(Player, String)
         Crystal.Dismiss(Player)
         Crystal.Tablet(Player, "Private Server: "..tostring(Crystal.PrivateServer))
-        Crystal.Tablet(Player, "Anti LegitV5: "..tostring(Crystal.AntiLegitV5))
-        Crystal.Tablet(Player, "Interested in Crystal's source? Check out github.com/aren-cllc/crystal")
+        Crystal.Tablet(Player, "Anti CrystalV5: "..tostring(Crystal.AntiCrystalV5))
+        Crystal.Tablet(Player, "Interested in Crystal's source? Check out github.com/aren-cllc/Crystal")
         Crystal.Tablet(Player, "Session: "..Crystal.Session_ID)
         local rank_counter = 0
         for _,rank in pairs(Crystal.Ranked) do rank_counter = rank_counter + 1 end
@@ -289,7 +289,7 @@ Crystal.AddCommand("Info", 0, {"info"}, "Shows information on the current crysta
         Crystal.Tablet(Player, #Crystal.Commands.." commands loaded")
 end)
 
-Crystal.AddCommand("Settings", 4, {"settings"}, "Configure the current crystal session", function(Player, String)
+Crystal.AddCommand("Settings", 4, {"settings"}, "Configure the current Crystal session", function(Player, String)
         Crystal.Dismiss(Player)
         if Crystal.PrivateServer == true then
                 Crystal.Tablet(Player, "Disable Private Server", "Red", function(Player, String)
@@ -302,14 +302,14 @@ Crystal.AddCommand("Settings", 4, {"settings"}, "Configure the current crystal s
                         Crystal.Dismiss(Player)
                 end)
         end
-        if Crystal.AntiLegitV5 == true then
-                Crystal.Tablet(Player, "Disable AntiLegitV5", "Red", function(Player, String)
-                        Crystal.AntiLegitV5 = false
+        if Crystal.AntiCrystalV5 == true then
+                Crystal.Tablet(Player, "Disable AntiCrystalV5", "Red", function(Player, String)
+                        Crystal.AntiCrystalV5 = false
                         Crystal.Dismiss(Player)
                 end)
         else
-                Crystal.Tablet(Player, "Enable AntiLegitV5", "Lime", function(Player, String)
-                        Crystal.AntiLegitV5 = true
+                Crystal.Tablet(Player, "Enable AntiCrystalV5", "Lime", function(Player, String)
+                        Crystal.AntiCrystalV5 = true
                         Crystal.Dismiss(Player)
                 end)
         end
