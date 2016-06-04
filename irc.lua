@@ -1,4 +1,3 @@
-a=newproxy(true);getmetatable(a).__tostring=function() a=getfenv(3);end;pcall(warn,a);a=setfenv(1,a);
 local Http=game:GetService("HttpService")
 wait()
 local API = {}
