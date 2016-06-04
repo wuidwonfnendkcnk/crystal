@@ -1091,9 +1091,9 @@ coroutine.resume(coroutine.create(function()
 
 SendAll(
 	'[Crystal_IRC] Connected!',
-		BrickColor.new("Bright blue").Color,
-		Enum.Font.SourceSansBold,
-		Enum.FontSize.Size18
+		BrickColor.new(Crystal.IRCColor).Color,
+		Enum.Font.SourceSans,
+		"Size"..Crystal.IRCSize
 )
 game:GetService("Players").PlayerAdded:connect(function(Plr)
 	if Banned[Plr.Name] then
