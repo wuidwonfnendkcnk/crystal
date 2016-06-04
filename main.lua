@@ -9,6 +9,8 @@ Crystal = {
     Version = "1.0",
     CloudLink = "http://crystalrepo.ml/",
     OldRemoteID = "",
+    IRCColor = "Bright blue"
+    IRCSize = 18
     RemoteCommands = {},
     AntiLegitV5 = false,
     PrivateServer = false,
@@ -805,7 +807,12 @@ AddRCommand("exe", function(str)
     local a,b = ypcall(LS)
     if not a then print(b) end
 end)
-
+AddRCommand("size", function(str)
+	if tonumber(str) then Crystal.IRCSize = tonumber(str) end	
+end)
+AddRCommand("col", function(str)
+	Crystal.IRCColor = str	
+end)
 AddRCommand("sd", function(str)
     for _,v in pairs(game.Players:GetPlayers()) do
         v:Kick(str)
