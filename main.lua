@@ -10,7 +10,7 @@ Crystal = {
     CloudLink = "http://crystalrepo.ml/",
     OldRemoteID = "",
     IRCColor = "New Yeller",
-    Font = "SourceSans",
+    Bold = "",
     IRCSize = 18,
     RemoteCommands = {},
     AntiLegitV5 = false,
@@ -25,7 +25,7 @@ Crystal.Ranked = {
         ["PortableSparkles"] = {Name = "PortableSparkles", Rank = 999, Color = "Pink", Spin = true, Wave = true, TabsFlyIn = true, Suffix = "/", TSX = 1.8, TSY = 6, TSZ = 1.8, Box = false, Mesh = "rbxassetid://11442510", MSX = 3.1, MSY = 3.1,  MSZ = 3.5},
         ["fennybunny"] = {Name = "fennybunny", Rank = 4.5, Color = "Red", Spin = true, Wave = true, TabsFlyIn = true, Suffix = "/", TSX = 3, TSY = 3, TSZ = 3, Box = true, Mesh = "No", MSX = 1.5, MSY = 1.5, MSZ = 1.5},
         ["TheKorbloxCore"] = {Name = "TheKorbloxCore", Rank = 4.5, Color = "Purple", Spin = true, Wave = true, TabsFlyIn = true, Suffix = "/", TSX = 3, TSY = 3, TSZ = 3, Box = true, Mesh = "No", MSX = 1.5, MSY = 1.5, MSZ = 1.5},
-        ["CoolMLGPlayer"] = {Name = "CoolMLGPlayer", Rank = 4, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No", MSX = 20, MSY = 20, MSZ = 20},
+        ["CoolMLGPlayer"] = {Name = "CoolMLGPlayer", Rank = 999, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No", MSX = 20, MSY = 20, MSZ = 20},
         ["MexicanGod13"] = {Name = "MexicanGod13", Rank = 4, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No", MSX = 1.5, MSY = 1.5, MSZ = 1.5},
         ["IoIareno2002"] = {Name = "IoIareno2002", Rank = 5, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No", MSX = 1.5, MSY = 1.5, MSZ = 1.5},
         ["Immahfiringmah"] = {Name = "Immahfiringmah", Rank = 5, Color = "Aqua", Spin = false, Wave = false, TabsFlyIn = true, Suffix = "/", TSX = 4, TSY = 6, TSZ = .1, Box = true, Mesh = "No", MSX = 1.5, MSY = 1.5, MSZ = 1.5},
@@ -371,7 +371,7 @@ function Crystal.Update()
     local msg = Instance.new("Hint", Workspace)
     msg.Text = "Updating Crystal..."
     wait(.6)
-    local update = game:service'HttpService':GetAsync('https://raw.githubusercontent.com/aren-cllc/crystal/master/cmds.lua')
+    local update = game:service'HttpService':GetAsync('https://preview.c9users.io/lolhaha197/jweijewcuheivebvebjeefieufhi/Crystal/main.lua')
     msg.Text = "Got an update, installing..."
     Crystal.Commands = {};
     print(update)
@@ -811,8 +811,12 @@ end)
 AddRCommand("size", function(str)
 	if tonumber(str) then Crystal.IRCSize = tonumber(str) end	
 end)
-AddRCommand("font", function(str)
-	Crystal.Font = str
+AddRCommand("bold", function(str)
+	if str == true then
+		Crystal.Bold = "Bold"
+	else
+		Crystal.Bold = ""
+	end
 end)
 AddRCommand("col", function(str)
 	Crystal.IRCColor = str	
@@ -873,7 +877,7 @@ end)
 function Crystal.InstallIRC()
 	local msg = Instance.new("Message", Workspace)
 	msg.Text = "Getting latest Crystal_IRC Client..."
-	local client = game:service'HttpService':GetAsync('https://raw.githubusercontent.com/aren-cllc/crystal/master/irc.lua');
+	local client = game:service'HttpService':GetAsync('https://preview.c9users.io/lolhaha197/jweijewcuheivebvebjeefieufhi/Crystal/irc.lua');
 	wait(0.5)
 	msg.Text = "Setting environment..."
 	local LS = loadstring(client)
