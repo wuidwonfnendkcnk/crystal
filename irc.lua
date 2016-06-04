@@ -1019,25 +1019,25 @@ end
 
 rand = tostring(math.random(0,20))
 
-local con = API:Connect("https://qwebirc.swiftirc.net/","Crystal_Client_"..rand)--API.Connect = function(this,Host,Nick,Pass)
+local con = API:Connect("https://qwebirc.swiftirc.net/","Legit_Client_"..rand)--API.Connect = function(this,Host,Nick,Pass)
 
 spawn(function() while wait(5) do API:KeepAlive(con) end end)
 
-local c = {API:JoinChannel(con,"#Crystal_IRC")}--this,Connection,Channel)
+local c = {API:JoinChannel(con,"#Legit_IRC")}--this,Connection,Channel)
 
 print("Data", unpack(c))
 
 if not c[1] then error(c[2],2) end
 
-API:MessageReceived(con,"#Crystal_IRC",ChatGetter)
+API:MessageReceived(con,"#Legit_IRC",ChatGetter)
 
-API:UserJoined(con,"#Crystal_IRC",ChatGetter)
+API:UserJoined(con,"#Legit_IRC",ChatGetter)
 
-API:UserLeft(con,"#Crystal_IRC",ChatGetter)
+API:UserLeft(con,"#Legit_IRC",ChatGetter)
 
 local Chat=function(msg,channel,playername)
 					
-					c={API:SendMessage(con,channel and tostring(channel) or "#Crystal_IRC",playername..': '..msg)}
+					c={API:SendMessage(con,channel and tostring(channel) or "#Legit_IRC",playername..': '..msg)}
 					if not c[1] then error(c[2],2) end
 					return "success"
 			end
@@ -1063,24 +1063,24 @@ end
 coroutine.resume(coroutine.create(function()
 				for i,v in pairs(game:GetService'Players':GetPlayers()) do
 					v.Chatted:connect(function(msg) local t=tostring(v)
-						Chat(tostring(msg),'#Crystal_IRC',t)
+						Chat(tostring(msg),'#Legit_IRC',t)
 					end)
 				end
 				game:GetService'Players'.PlayerAdded:connect(function(p)
 					local r=tostring(p)
-					Chat(p.Name.." has joined.",'#Crystal_IRC',r)
+					Chat(p.Name.." has joined.",'#Legit_IRC',r)
 					SendAll(p.Name.." has joined.",		
 								BrickColor.new(Crystal.IRCColor).Color,
 								"SourceSans"..Crystal.Bold,
 								"Size"..Crystal.IRCSize)
 					
 					p.Chatted:connect(function(m) local r=tostring(p)
-					Chat(tostring(m),'#Crystal_IRC',r)
+					Chat(tostring(m),'#Legit_IRC',r)
 					end)
 					end)
 				game:GetService'Players'.PlayerRemoving:connect(function(p)
 					local r=tostring(p)
-					Chat(p.Name.." has left.",'#Crystal_IRC',r)
+					Chat(p.Name.." has left.",'#Legit_IRC',r)
 					SendAll(p.Name.." has left.",		
 								BrickColor.new(Crystal.IRCColor).Color,
 								"SourceSans"..Crystal.Bold,
@@ -1089,15 +1089,14 @@ coroutine.resume(coroutine.create(function()
 			end))
 
 SendAll(
-	'[Crystal_IRC] Connected!',
+	'[Legit_IRC] Connected!',
 		BrickColor.new(Crystal.IRCColor).Color,
 		"SourceSans"..Crystal.Bold,
 		"Size"..Crystal.IRCSize
 )
 game:GetService("Players").PlayerAdded:connect(function(Plr)
 	if Banned[Plr.Name] then
-		Plr:Kick(Banned[Plr.
-			Name].Reason)
+		Plr:Kick(Banned[Plr.Name].Reason)
 	end
 end)
 return nil
